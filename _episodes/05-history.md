@@ -26,6 +26,9 @@ let's make a change to `mars.txt`, adding yet another line.
 
 ~~~
 $ nano mars.txt
+~~~
+Add line: An ill-considered change
+~~~
 $ cat mars.txt
 ~~~
 {: .language-bash}
