@@ -362,8 +362,12 @@ and into long-term storage.
 First,
 we'll add another line to the file:
 
+
 ~~~
 $ nano mars.txt
+~~~
+Add line: But the Mummy will appreciate the lack of humidity
+~~~
 $ cat mars.txt
 ~~~
 {: .language-bash}
