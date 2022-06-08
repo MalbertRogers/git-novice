@@ -142,27 +142,6 @@ $ git config --list
 You can change your configuration as many times as you want: use the
 same commands to choose another editor or update your email address.
 
-> ## Proxy
->
-> In some networks you need to use a
-> [proxy](https://en.wikipedia.org/wiki/Proxy_server). If this is the case, you
-> may also need to tell Git about the proxy:
->
-> ~~~
-> $ git config --global http.proxy proxy-url
-> $ git config --global https.proxy proxy-url
-> ~~~
-> {: .language-bash}
->
-> To disable the proxy, use
->
-> ~~~
-> $ git config --global --unset http.proxy
-> $ git config --global --unset https.proxy
-> ~~~
-> {: .language-bash}
-{: .callout}
-
 > ## Git Help and Manual
 >
 > Always remember that if you forget the subcommands or options of a `git` command, you can access the
