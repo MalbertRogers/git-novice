@@ -52,6 +52,13 @@ We do this by creating a file in the root directory of our project called `.giti
 
 ~~~
 $ nano .gitignore
+~~~
+Add lines: 
+~~~
+*.dat
+results/
+~~~
+~~~
 $ cat .gitignore
 ~~~
 {: .language-bash}
