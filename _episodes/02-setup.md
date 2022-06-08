@@ -39,12 +39,6 @@ after this lesson will include this information.
 
 For this lesson, we will be interacting with [GitLab](https://gitlab.com/) and so the email address used should be the same as the one used when setting up your GitLab account. 
 
->## Keeping your email private
->
->If you elect to use a private email address with GitLab, then use that same email address for the `user.email` value, e.g. `username@users.noreply.gitlab.com` replacing `username` with your GitLab one.
-{: .callout}
-
-
 > ## Line Endings
 >
 > As with other keys, when you hit <kbd>Enter</kbd> or <kbd>↵</kbd> or on Macs, <kbd>Return</kbd> on your keyboard,
