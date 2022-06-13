@@ -25,11 +25,9 @@ play Owner and Collaborator.
 > won't need to give anyone access on GitLab, because both 'partners' are you.
 {: .callout}
 
-The Owner needs to give the Collaborator access. On GitLab, click the settings
-button on the right, select Manage access, click Invite a collaborator, and
-then enter your partner's username.
+The Owner needs to give the Collaborator access. On GitLab, 1) click directly on "Invite members" (under "Invite your team") or 2) hover or click on "Project information" and then proceed to click on "Members" and find the "Invite members" button in the right corner (the first option is obviously much easier and quicker, but is only available when the repository is still empty). Afterwards, you will have to enter your partner's username, select role (for more info on roles: [GitLab Permissions and roles] (https://docs.gitlab.com/ee/user/permissions.html)) and expire date (optional) and click invite. 
 
-![Adding Collaborators on GitLab](../fig/github-add-collaborators.png)
+![Adding Collaborators on GitLab](../fig/gitlab-add-collaborators.png)
 
 To accept access to the Owner's repo, the Collaborator
 needs to go to "Notifications" or check for email notification. Once there she can accept access to the Owner's repo.
