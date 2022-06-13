@@ -90,12 +90,12 @@ Copy that URL from the browser, go into the local `planets` repository, and run
 this command:
 
 ~~~
-$ git remote add origin git@gitlab.com:yourusername/planets.git
+$ git remote add origin git@gitlab.com:vlad/planets.git
 ~~~
 {: .language-bash}
 
-Make sure to use the URL for your repository: the only
-difference should be your username instead of `yourusername`.
+Make sure to use the URL for your repository rather than Vlad's: the only
+difference should be your username instead of `vlad`.
 
 `origin` is a local name used to refer to the remote repository. It could be called
 anything, but `origin` is a convention that is often used by default in git
@@ -152,7 +152,7 @@ Your output is going to look a little different depending on whether or not SSH 
 Dracula has not set up SSH on his computer, so his output is 
 
 ~~~
-ls: cannot access '/c/Users/Vlad Dracula/.ssh': No such file or directory
+ls: cannot access '/c/Users/vlad Dracula/.ssh': No such file or directory
 ~~~
 {: .output}
 
