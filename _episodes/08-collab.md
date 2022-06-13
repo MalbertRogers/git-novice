@@ -13,17 +13,9 @@ keypoints:
 ---
 
 For the next step, get into pairs.  One person will be the "Owner" and the other
-will be the "Collaborator". The goal is that the Collaborator add changes into
+will be "Member" (also known as Collaborator on GitHub). The goal is that the Member add changes into
 the Owner's repository. We will switch roles at the end, so both persons will
-play Owner and Collaborator.
-
-> ## Practicing By Yourself
->
-> If you're working through this lesson on your own, you can carry on by opening
-> a second terminal window.
-> This window will represent your partner, working on another computer. You
-> won't need to give anyone access on GitLab, because both 'partners' are you.
-{: .callout}
+play Owner and Member.
 
 The Owner needs to give the Collaborator access. On GitLab, 1) click directly on "Invite members" (under "Invite your team") or 2) hover or click on "Project information" and then proceed to click on "Members" and find the "Invite members" button in the right corner (the first option is obviously much easier and quicker, but is only available when the repository is still empty). Afterwards, you will have to enter your partner's username, select role (for more info on roles: [GitLab Permissions and roles] (https://docs.gitlab.com/ee/user/permissions.html)) and expire date (optional) and click invite. 
 
