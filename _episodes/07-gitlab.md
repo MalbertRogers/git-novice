@@ -29,26 +29,24 @@ Let's start by sharing the changes we've made to our current project with the
 world. To this end we are going to create a *remote* repository that will be linked to our *local* repository.
 
 ## 1. Create a remote repository
-Log in to [GitHub](https://github.com), then click on the icon in the top right corner to
+Log in to [GitLab](https://gitlab.com), then click on the icon in the top right corner to
 create a new repository called `planets`:
 
-![Creating a Repository on GitHub (Step 1)](../fig/github-create-repo-01.png)
+![Creating a Repository on GitLab (Step 1)](../fig/gitlab-create-repo-01.png)
 
 Name your repository "planets" and then click "Create Repository".
 
 Note: Since this repository will be connected to a local repository, it needs to be empty. Leave 
-"Initialize this repository with a README" unchecked, and keep "None" as options for both "Add 
-.gitignore" and "Add a license." See the "GitHub License and README files" exercise below for a full 
-explanation of why the repository needs to be empty.
+"Initialize this repository with a README" unchecked.
 
-![Creating a Repository on GitHub (Step 2)](../fig/github-create-repo-02.png)
+![Creating a Repository on GitLab (Step 2)](../fig/gitlab-create-repo-02.png)
 
-As soon as the repository is created, GitHub displays a page with a URL and some
+As soon as the repository is created, GitLab displays a page with a URL and some
 information on how to configure your local repository:
 
-![Creating a Repository on GitHub (Step 3)](../fig/github-create-repo-03.png)
+![Creating a Repository on GitLab (Step 3)](../fig/gitlab-create-repo-03.png)
 
-This effectively does the following on GitHub's servers:
+This effectively does the following on GitLab's servers:
 
 ~~~
 $ mkdir planets
@@ -65,18 +63,18 @@ which looked like this:
 
 Now that we have two repositories, we need a diagram like this:
 
-![Freshly-Made GitHub Repository](../fig/git-freshly-made-github-repo.svg)
+![Freshly-Made GitLab Repository](../fig/git-freshly-made-github-repo.svg)
 
 Note that our local repository still contains our earlier work on `mars.txt`, but the
-remote repository on GitHub appears empty as it doesn't contain any files yet.
+remote repository on GitLab appears empty as it doesn't contain any files yet.
 
 ## 2. Connect local to remote repository
 Now we connect the two repositories.  We do this by making the
-GitHub repository a [remote]({{ page.root}}{% link reference.md %}#remote) for the local repository.
-The home page of the repository on GitHub includes the URL string we need to
+GitLab repository a [remote]({{ page.root}}{% link reference.md %}#remote) for the local repository.
+The home page of the repository on GitLab includes the URL string we need to
 identify it:
 
-![Where to Find Repository URL on GitHub](../fig/github-find-repo-string.png)
+![Where to Find Repository URL on GitLab](../fig/gitlab-find-repo-string.png)
 
 Click on the 'SSH' link to change the [protocol]({{ page.root }}{% link reference.md %}#protocol) from HTTPS to SSH.
 
@@ -84,22 +82,20 @@ Click on the 'SSH' link to change the [protocol]({{ page.root }}{% link referenc
 >
 > We use SSH here because, while it requires some additional configuration, it is a 
 > security protocol widely used by many applications.  The steps below describe SSH at a 
-> minimum level for GitHub. A supplemental episode to this lesson discusses advanced setup 
+> minimum level for GitLab. A supplemental episode to this lesson discusses advanced setup 
 > and concepts of SSH and key pairs, and other material supplemental to git related SSH. 
 {: .callout}
-
-![Changing the Repository URL on GitHub](../fig/github-change-repo-string.png)
 
 Copy that URL from the browser, go into the local `planets` repository, and run
 this command:
 
 ~~~
-$ git remote add origin git@github.com:vlad/planets.git
+$ git remote add origin git@gitlab.com:yourusername/planets.git
 ~~~
 {: .language-bash}
 
-Make sure to use the URL for your repository rather than Vlad's: the only
-difference should be your username instead of `vlad`.
+Make sure to use the URL for your repository: the only
+difference should be your username instead of `yourusername`.
 
 `origin` is a local name used to refer to the remote repository. It could be called
 anything, but `origin` is a convention that is often used by default in git
